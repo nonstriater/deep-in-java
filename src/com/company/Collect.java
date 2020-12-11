@@ -1,14 +1,66 @@
 package com.company;
 
-import java.util.Arrays;
-import java.util.IntSummaryStatistics;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Collect {
 
     public static void main(String[] args) {
+
+        {
+            String a = "a";
+            String x = a+1;
+            if ("b".equals(x)){
+                System.out.println("hi");
+            }
+        }
+
+        {
+            //通过 key and value 过滤
+            Map<String, String> map = new HashMap<String, String>();
+            map.put("1","a");
+            map.put("2","b");
+            map.put("3","c");
+            map.put("4","d");
+            map.put("5","e");
+            map.put("6","f");
+
+            Set<Long> set = new HashSet<>();
+            set.add(1L);
+            set.add(3L);
+
+            String a = map.entrySet().stream()
+                    .filter(entry -> set.contains(Long.valueOf(entry.getKey())))
+                    .map(entry -> entry.getValue()+1)
+                    .filter(entry -> entry.equals("a1") || entry.equals("c1"))
+                    .collect(Collectors.joining("="));
+
+            System.out.println(a);
+
+        }
+
+        {
+            //通过 key and value 过滤
+            Map<String, String> map = new HashMap<String, String>();
+            map.put("1","a");
+            map.put("2","b");
+            map.put("3","c");
+            map.put("4","d");
+
+            Set<Long> set = new HashSet<>();
+            set.add(1L);
+            set.add(3L);
+
+            Map<String, String>  filtered = map.entrySet().stream()
+                    .filter(entry -> set.contains(Long.valueOf(entry.getKey())))
+                    .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+//                    .map(entry -> entry.getValue()+1)
+//                    .filter(entry -> entry.equals("b"))
+//                    .
+            System.out.println(filtered);
+
+
+        }
 
         {
             //统计
