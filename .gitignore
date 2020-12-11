@@ -1,0 +1,15 @@
+.idea/*
+
+dependency-reduced-pom.xml
+target/*
+logs/*
+
+*.iml
+
+*.jar
+*.war
+*.ear
+output/*
+.DS_Store
+
+
