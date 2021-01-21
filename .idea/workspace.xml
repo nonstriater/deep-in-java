@@ -20,15 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bd44994-c0ae-4eb1-85fb-3057b9e0f3cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/Map1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/equal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/company/Collect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deep in java/com/company/Collect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Collect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Collect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,6 +42,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1W6kU0nX7YpQuvwUKlwkoryTXTO" />
   <component name="ProjectViewState">
@@ -58,11 +64,12 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.09208103" />
   </component>
-  <component name="RunManager" selected="Application.Collect">
+  <component name="RunManager" selected="Application.equal">
     <configuration name="Collect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Collect" />
       <module name="deep in java" />
@@ -86,8 +93,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="box" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.box" />
+      <module name="deep in java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="equal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.equal" />
+      <module name="deep in java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.equal" />
+        <item itemvalue="Application.box" />
         <item itemvalue="Application.Collect" />
       </list>
     </recent_temporary>
@@ -105,7 +140,9 @@
       <workItem from="1578477445458" duration="1809000" />
       <workItem from="1607656996671" duration="947000" />
       <workItem from="1607661577859" duration="330000" />
-      <workItem from="1607661913256" duration="4321000" />
+      <workItem from="1607661913256" duration="5193000" />
+      <workItem from="1611199428872" duration="2286000" />
+      <workItem from="1611211908246" duration="3260000" />
     </task>
     <servers />
   </component>
@@ -130,38 +167,38 @@
     </state>
     <state x="337" y="-874" width="1086" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607662474999" />
     <state x="368" y="201" width="1084" height="671" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1607662657134" />
-    <state width="1868" height="190" key="GridCell.Tab.0.bottom" timestamp="1607667814605">
+    <state width="1868" height="278" key="GridCell.Tab.0.bottom" timestamp="1611200218577">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="190" key="GridCell.Tab.0.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607667814605" />
-    <state width="1868" height="190" key="GridCell.Tab.0.center" timestamp="1607667814600">
+    <state width="1868" height="278" key="GridCell.Tab.0.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218577" />
+    <state width="1868" height="278" key="GridCell.Tab.0.center" timestamp="1611200218576">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="190" key="GridCell.Tab.0.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607667814600" />
-    <state width="1868" height="190" key="GridCell.Tab.0.left" timestamp="1607667814599">
+    <state width="1868" height="278" key="GridCell.Tab.0.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218576" />
+    <state width="1868" height="278" key="GridCell.Tab.0.left" timestamp="1611200218575">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="190" key="GridCell.Tab.0.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607667814599" />
-    <state width="1868" height="190" key="GridCell.Tab.0.right" timestamp="1607667814604">
+    <state width="1868" height="278" key="GridCell.Tab.0.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218575" />
+    <state width="1868" height="278" key="GridCell.Tab.0.right" timestamp="1611200218576">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="190" key="GridCell.Tab.0.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607667814604" />
-    <state width="1868" height="190" key="GridCell.Tab.1.bottom" timestamp="1607667814786">
+    <state width="1868" height="278" key="GridCell.Tab.0.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218576" />
+    <state width="1868" height="278" key="GridCell.Tab.1.bottom" timestamp="1611200218364">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="190" key="GridCell.Tab.1.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607667814786" />
-    <state width="1868" height="190" key="GridCell.Tab.1.center" timestamp="1607667814777">
+    <state width="1868" height="278" key="GridCell.Tab.1.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218364" />
+    <state width="1868" height="278" key="GridCell.Tab.1.center" timestamp="1611200218363">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="190" key="GridCell.Tab.1.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607667814777" />
-    <state width="1868" height="190" key="GridCell.Tab.1.left" timestamp="1607667814777">
+    <state width="1868" height="278" key="GridCell.Tab.1.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218363" />
+    <state width="1868" height="278" key="GridCell.Tab.1.left" timestamp="1611200218362">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="190" key="GridCell.Tab.1.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607667814777" />
-    <state width="1868" height="190" key="GridCell.Tab.1.right" timestamp="1607667814786">
+    <state width="1868" height="278" key="GridCell.Tab.1.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218362" />
+    <state width="1868" height="278" key="GridCell.Tab.1.right" timestamp="1611200218363">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="190" key="GridCell.Tab.1.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607667814786" />
+    <state width="1868" height="278" key="GridCell.Tab.1.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218363" />
     <state x="237" y="-1049" key="SettingsEditor" timestamp="1607662518573">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
@@ -170,16 +207,5 @@
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
     <state x="458" y="-1032" width="838" height="1032" key="search.everywhere.popup/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607666518624" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Collect.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
