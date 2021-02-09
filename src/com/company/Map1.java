@@ -17,6 +17,7 @@ public class Map1 {
 
         Map<String, String> lhm = new LinkedHashMap<>();
 
+        //线程安全
         Map<String, String> chp = new ConcurrentHashMap<>();
         chp.put("c1", "v1");
 

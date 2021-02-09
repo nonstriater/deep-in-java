@@ -6,7 +6,6 @@ package com.company;
 public class box {
 
     public static void main(String[] args) {
-
         /**
          * 看源码知道：ValueOf(i) 创建 Integer 对象的时候, 如果数值在 [-128, 127] 之间时，
          * 返回的 是 IntegerCache 中已经存在的对象的引用； 否则新建一个 Integer 对象

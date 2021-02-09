@@ -2,7 +2,9 @@ package com.company;
 
 public class String1 {
 
-    StringBuffer sb = new StringBuffer("hello");
+    //StringBuffer  线程安全 syn
+    //StringBuilder
 
+    StringBuffer sb = new StringBuffer("hello"); //线程安全  synchronized
     StringBuilder stringBuilder = new StringBuilder("s builder");
 }
