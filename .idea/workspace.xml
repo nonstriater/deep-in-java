@@ -20,11 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bd44994-c0ae-4eb1-85fb-3057b9e0f3cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/MySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jvm/Init.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Map1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Map1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/String1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/String1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/box.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nonstriater/Thread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nonstriater/MyThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/company/String1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deep in java/com/company/String1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/company/box.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deep in java/com/company/box.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/nonstriater/Thread.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +72,9 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.09208103" />
   </component>
-  <component name="RunManager" selected="Application.equal">
-    <configuration name="Collect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Collect" />
+  <component name="RunManager" selected="Application.Init">
+    <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Array" />
       <module name="deep in java" />
       <extension name="coverage">
         <pattern>
@@ -84,12 +86,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+    <configuration name="Init" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jvm.Init" />
       <module name="deep in java" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jvm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.MySet" />
+      <module name="deep in java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,9 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Init" />
+        <item itemvalue="Application.MySet" />
+        <item itemvalue="Application.Array" />
         <item itemvalue="Application.equal" />
         <item itemvalue="Application.box" />
-        <item itemvalue="Application.Collect" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +165,10 @@
       <workItem from="1611199428872" duration="2286000" />
       <workItem from="1611211908246" duration="6741000" />
       <workItem from="1611492947377" duration="2621000" />
-      <workItem from="1611744545856" duration="6069000" />
+      <workItem from="1611744545856" duration="7722000" />
+      <workItem from="1614684973381" duration="903000" />
+      <workItem from="1614846164296" duration="561000" />
+      <workItem from="1617194734756" duration="359000" />
     </task>
     <servers />
   </component>
@@ -165,50 +188,52 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="368" y="201" width="1084" height="671" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607662657134">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="337" y="-874" width="1086" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607662474999" />
-    <state x="368" y="201" width="1084" height="671" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1607662657134" />
-    <state width="1868" height="278" key="GridCell.Tab.0.bottom" timestamp="1611200218577">
+    <state x="229" y="-1057" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1614846367454">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="278" key="GridCell.Tab.0.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218577" />
-    <state width="1868" height="278" key="GridCell.Tab.0.center" timestamp="1611200218576">
+    <state x="229" y="-1057" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1614846367454" />
+    <state width="1868" height="196" key="GridCell.Tab.0.bottom" timestamp="1617195091948">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="278" key="GridCell.Tab.0.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218576" />
-    <state width="1868" height="278" key="GridCell.Tab.0.left" timestamp="1611200218575">
+    <state width="1868" height="196" key="GridCell.Tab.0.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1617195091948" />
+    <state width="1868" height="196" key="GridCell.Tab.0.center" timestamp="1617195091947">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="278" key="GridCell.Tab.0.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218575" />
-    <state width="1868" height="278" key="GridCell.Tab.0.right" timestamp="1611200218576">
+    <state width="1868" height="196" key="GridCell.Tab.0.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1617195091947" />
+    <state width="1868" height="196" key="GridCell.Tab.0.left" timestamp="1617195091946">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="278" key="GridCell.Tab.0.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218576" />
-    <state width="1868" height="278" key="GridCell.Tab.1.bottom" timestamp="1611200218364">
+    <state width="1868" height="196" key="GridCell.Tab.0.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1617195091946" />
+    <state width="1868" height="196" key="GridCell.Tab.0.right" timestamp="1617195091948">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="278" key="GridCell.Tab.1.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218364" />
-    <state width="1868" height="278" key="GridCell.Tab.1.center" timestamp="1611200218363">
+    <state width="1868" height="196" key="GridCell.Tab.0.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1617195091948" />
+    <state width="1868" height="196" key="GridCell.Tab.1.bottom" timestamp="1617195091848">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="278" key="GridCell.Tab.1.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218363" />
-    <state width="1868" height="278" key="GridCell.Tab.1.left" timestamp="1611200218362">
+    <state width="1868" height="196" key="GridCell.Tab.1.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1617195091848" />
+    <state width="1868" height="196" key="GridCell.Tab.1.center" timestamp="1617195091847">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="278" key="GridCell.Tab.1.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218362" />
-    <state width="1868" height="278" key="GridCell.Tab.1.right" timestamp="1611200218363">
+    <state width="1868" height="196" key="GridCell.Tab.1.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1617195091847" />
+    <state width="1868" height="196" key="GridCell.Tab.1.left" timestamp="1617195091847">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="278" key="GridCell.Tab.1.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1611200218363" />
-    <state x="237" y="-1049" key="SettingsEditor" timestamp="1607662518573">
+    <state width="1868" height="196" key="GridCell.Tab.1.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1617195091847" />
+    <state width="1868" height="196" key="GridCell.Tab.1.right" timestamp="1617195091848">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="237" y="-1049" key="SettingsEditor/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607662518573" />
-    <state x="458" y="-1032" width="838" height="1032" key="search.everywhere.popup" timestamp="1607666518624">
-      <screen x="-83" y="-1057" width="1920" height="1057" />
-    </state>
-    <state x="458" y="-1032" width="838" height="1032" key="search.everywhere.popup/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1607666518624" />
+    <state width="1868" height="196" key="GridCell.Tab.1.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1617195091848" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/MySet.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
