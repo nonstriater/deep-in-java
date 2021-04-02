@@ -19,7 +19,6 @@ public class box {
 
         System.out.println(i1 == i2); //同一个对象
         System.out.println(i3 == i4); //不同对象
-
     }
 
 
