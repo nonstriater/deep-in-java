@@ -20,11 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bd44994-c0ae-4eb1-85fb-3057b9e0f3cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Try.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/innerclass/AnonyClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/innerclass/InnerClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/innerclass/InnerInterfaceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/innerclass/StaticClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/company/box.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deep in java/com/company/box.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/box.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nonstriater/Exception.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nonstriater/Exception.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nonstriater/InnerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nonstriater/InnerClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nonstriater/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nonstriater/MyThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -167,7 +171,7 @@
       <workItem from="1614684973381" duration="903000" />
       <workItem from="1614846164296" duration="561000" />
       <workItem from="1617194734756" duration="1602000" />
-      <workItem from="1617379602858" duration="2877000" />
+      <workItem from="1617379602858" duration="15292000" />
     </task>
     <servers />
   </component>
@@ -231,16 +235,9 @@
     </state>
     <state width="1868" height="423" key="GridCell.Tab.1.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1617248126962" />
     <state width="1628" height="319" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1617381379572" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/MySet.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup" timestamp="1617949274061">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1617949274061" />
   </component>
 </project>
