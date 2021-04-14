@@ -8,6 +8,7 @@ public class CallableTest {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         Callable<String> call =  new CallableImpl();
+        //FutureTask是一个实现Runnable接口的类
         FutureTask<String> futureTask = new FutureTask<>(call);
 
         //新建一个线程运行 task 任务
