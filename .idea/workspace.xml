@@ -20,19 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bd44994-c0ae-4eb1-85fb-3057b9e0f3cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/SafeArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jvm/classloader/MyClassloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thread/deadlock/DeadlockCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thread/pool/MyForkJoinPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thread/volati/MyVolatile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jvm/oom/ConstantPoolOOM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jvm/oom/HeadOOM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jvm/oom/MethodAreaOOM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jvm/oom/MyStackOverflow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jvm/oom/StackOOM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jvm/profiler/oom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/company/Array.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deep in java/com/company/Array.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/thread/blockqueue/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deep in java/com/thread/blockqueue/Queue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/thread/impl/CallableTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deep in java/com/thread/impl/CallableTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/thread/thread/MyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deep in java/com/thread/thread/MyThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thread/blockqueue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thread/blockqueue/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thread/pool/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thread/pool/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/thread/cas/MyAtomicInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deep in java/com/thread/cas/MyAtomicInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thread/cas/MyAtomicInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thread/cas/MyAtomicInteger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,13 +75,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.09208103" />
   </component>
-  <component name="RunManager" selected="Application.Array">
-    <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Array" />
+  <component name="RunManager" selected="Application.ConstantPoolOOM">
+    <configuration name="ConstantPoolOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jvm.oom.ConstantPoolOOM" />
       <module name="deep in java" />
+      <option name="VM_PARAMETERS" value="-XX:PermSize=1M -XX:MaxPermSize=1M" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="com.jvm.oom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +90,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CallableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thread.impl.CallableTest" />
+    <configuration name="HeadOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jvm.oom.HeadOOM" />
       <module name="deep in java" />
+      <option name="VM_PARAMETERS" value="-Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thread.impl.*" />
+          <option name="PATTERN" value="com.jvm.oom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyForkJoinPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thread.pool.MyForkJoinPool" />
+    <configuration name="MyAtomicInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thread.cas.MyAtomicInteger" />
       <module name="deep in java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thread.pool.*" />
+          <option name="PATTERN" value="com.thread.cas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +117,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.thread.thread.MyThread" />
+    <configuration name="MyStackOverflow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jvm.oom.MyStackOverflow" />
       <module name="deep in java" />
+      <option name="VM_PARAMETERS" value="-Xss256k" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thread.thread.*" />
+          <option name="PATTERN" value="com.jvm.oom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +131,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Try" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Try" />
+    <configuration name="StackOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jvm.oom.StackOOM" />
       <module name="deep in java" />
+      <option name="VM_PARAMETERS" value="-Xss2m" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="com.jvm.oom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,13 +145,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.HeadOOM" />
+      <item itemvalue="Application.MyAtomicInteger" />
+      <item itemvalue="Application.MyStackOverflow" />
+      <item itemvalue="Application.StackOOM" />
+      <item itemvalue="Application.ConstantPoolOOM" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Array" />
-        <item itemvalue="Application.MyForkJoinPool" />
-        <item itemvalue="Application.MyThread" />
-        <item itemvalue="Application.CallableTest" />
-        <item itemvalue="Application.Try" />
+        <item itemvalue="Application.ConstantPoolOOM" />
+        <item itemvalue="Application.StackOOM" />
+        <item itemvalue="Application.MyStackOverflow" />
+        <item itemvalue="Application.HeadOOM" />
+        <item itemvalue="Application.MyAtomicInteger" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +183,7 @@
       <workItem from="1614684973381" duration="903000" />
       <workItem from="1614846164296" duration="561000" />
       <workItem from="1617194734756" duration="1602000" />
-      <workItem from="1617379602858" duration="49001000" />
+      <workItem from="1617379602858" duration="57195000" />
     </task>
     <servers />
   </component>
@@ -196,6 +203,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="588" y="-828" width="1086" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618897330543">
+      <screen x="-83" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="588" y="-828" width="1086" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618897330543" />
     <state x="499" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618732530894">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -208,46 +219,50 @@
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
     <state x="229" y="-1057" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1614846367454" />
-    <state width="1628" height="120" key="GridCell.Tab.0.bottom" timestamp="1618726510415">
+    <state x="449" y="106" key="#com.intellij.unscramble.UnscrambleDialog" timestamp="1618740173174">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1868" height="252" key="GridCell.Tab.0.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618378286417" />
-    <state width="1628" height="120" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1618726510415" />
-    <state width="1628" height="120" key="GridCell.Tab.0.center" timestamp="1618726510414">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="449" y="106" key="#com.intellij.unscramble.UnscrambleDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1618740173174" />
+    <state width="1868" height="195" key="GridCell.Tab.0.bottom" timestamp="1618897321811">
+      <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="252" key="GridCell.Tab.0.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618378286416" />
-    <state width="1628" height="120" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1618726510414" />
-    <state width="1628" height="120" key="GridCell.Tab.0.left" timestamp="1618726510413">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1868" height="195" key="GridCell.Tab.0.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618897321811" />
+    <state width="1628" height="341" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593220" />
+    <state width="1868" height="195" key="GridCell.Tab.0.center" timestamp="1618897321810">
+      <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="252" key="GridCell.Tab.0.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618378286415" />
-    <state width="1628" height="120" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1618726510413" />
-    <state width="1628" height="120" key="GridCell.Tab.0.right" timestamp="1618726510415">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1868" height="195" key="GridCell.Tab.0.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618897321810" />
+    <state width="1628" height="341" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593219" />
+    <state width="1868" height="195" key="GridCell.Tab.0.left" timestamp="1618897321809">
+      <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="252" key="GridCell.Tab.0.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618378286416" />
-    <state width="1628" height="120" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1618726510415" />
-    <state width="1628" height="120" key="GridCell.Tab.1.bottom" timestamp="1618726510322">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1868" height="195" key="GridCell.Tab.0.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618897321809" />
+    <state width="1628" height="341" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593218" />
+    <state width="1868" height="195" key="GridCell.Tab.0.right" timestamp="1618897321810">
+      <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="322" key="GridCell.Tab.1.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618231757468" />
-    <state width="1628" height="120" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1618726510322" />
-    <state width="1628" height="120" key="GridCell.Tab.1.center" timestamp="1618726510322">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1868" height="195" key="GridCell.Tab.0.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618897321810" />
+    <state width="1628" height="341" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593219" />
+    <state width="1868" height="195" key="GridCell.Tab.1.bottom" timestamp="1618897321733">
+      <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="322" key="GridCell.Tab.1.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618231757467" />
-    <state width="1628" height="120" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1618726510322" />
-    <state width="1628" height="120" key="GridCell.Tab.1.left" timestamp="1618726510321">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1868" height="195" key="GridCell.Tab.1.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618897321733" />
+    <state width="1628" height="341" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593108" />
+    <state width="1868" height="195" key="GridCell.Tab.1.center" timestamp="1618897321732">
+      <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="322" key="GridCell.Tab.1.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618231757466" />
-    <state width="1628" height="120" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1618726510321" />
-    <state width="1628" height="120" key="GridCell.Tab.1.right" timestamp="1618726510322">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1868" height="195" key="GridCell.Tab.1.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618897321732" />
+    <state width="1628" height="341" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593107" />
+    <state width="1868" height="195" key="GridCell.Tab.1.left" timestamp="1618897321732">
+      <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="322" key="GridCell.Tab.1.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618231757467" />
-    <state width="1628" height="120" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1618726510322" />
+    <state width="1868" height="195" key="GridCell.Tab.1.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618897321732" />
+    <state width="1628" height="341" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593107" />
+    <state width="1868" height="195" key="GridCell.Tab.1.right" timestamp="1618897321733">
+      <screen x="-83" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1868" height="195" key="GridCell.Tab.1.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618897321733" />
+    <state width="1628" height="341" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593107" />
     <state x="421" y="23" width="838" height="1027" key="search.everywhere.popup" timestamp="1618652481618">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
