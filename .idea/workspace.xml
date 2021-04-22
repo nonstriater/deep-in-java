@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bd44994-c0ae-4eb1-85fb-3057b9e0f3cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/designpattern/singleton/MySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thread/communication/MyCountDownLatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thread/volati/MyVolatile2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thread/volati/MyVolatile3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/company/box.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deep in java/com/company/box.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/jvm/oom/ConstantPoolOOM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deep in java/com/jvm/oom/ConstantPoolOOM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/deep in java/com/thread/volati/MyVolatile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/deep in java/com/thread/volati/MyVolatile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thread/volati/MyVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thread/volati/MyVolatile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,14 +73,13 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.09208103" />
   </component>
-  <component name="RunManager" selected="Application.box">
-    <configuration name="ConstantPoolOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jvm.oom.ConstantPoolOOM" />
+  <component name="RunManager" selected="Application.MyVolatile3">
+    <configuration name="MyVolatile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thread.volati.MyVolatile" />
       <module name="deep in java" />
-      <option name="VM_PARAMETERS" value="-XX:PermSize=1M -XX:MaxPermSize=1M" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jvm.oom.*" />
+          <option name="PATTERN" value="com.thread.volati.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,13 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeadOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jvm.oom.HeadOOM" />
+    <configuration name="MyVolatile2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thread.volati.MyVolatile2" />
       <module name="deep in java" />
-      <option name="VM_PARAMETERS" value="-Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jvm.oom.*" />
+          <option name="PATTERN" value="com.thread.volati.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,13 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyStackOverflow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jvm.oom.MyStackOverflow" />
+    <configuration name="MyVolatile3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thread.volati.MyVolatile3" />
       <module name="deep in java" />
-      <option name="VM_PARAMETERS" value="-Xss256k" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jvm.oom.*" />
+          <option name="PATTERN" value="com.thread.volati.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,13 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackOOM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jvm.oom.StackOOM" />
+    <configuration name="Try" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Try" />
       <module name="deep in java" />
-      <option name="VM_PARAMETERS" value="-Xss2m" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jvm.oom.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,19 +140,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.HeadOOM" />
-      <item itemvalue="Application.MyStackOverflow" />
-      <item itemvalue="Application.StackOOM" />
-      <item itemvalue="Application.ConstantPoolOOM" />
       <item itemvalue="Application.box" />
+      <item itemvalue="Application.Try" />
+      <item itemvalue="Application.MyVolatile" />
+      <item itemvalue="Application.MyVolatile2" />
+      <item itemvalue="Application.MyVolatile3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyVolatile3" />
+        <item itemvalue="Application.MyVolatile2" />
+        <item itemvalue="Application.MyVolatile" />
+        <item itemvalue="Application.Try" />
         <item itemvalue="Application.box" />
-        <item itemvalue="Application.ConstantPoolOOM" />
-        <item itemvalue="Application.StackOOM" />
-        <item itemvalue="Application.MyStackOverflow" />
-        <item itemvalue="Application.HeadOOM" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +177,8 @@
       <workItem from="1614684973381" duration="903000" />
       <workItem from="1614846164296" duration="561000" />
       <workItem from="1617194734756" duration="1602000" />
-      <workItem from="1617379602858" duration="66804000" />
+      <workItem from="1617379602858" duration="67039000" />
+      <workItem from="1619081524818" duration="4632000" />
     </task>
     <servers />
   </component>
@@ -206,10 +206,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="499" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1618732530894" />
-    <state x="643" y="-882" key="#com.intellij.ide.util.MemberChooser" timestamp="1618379488547">
+    <state x="643" y="-882" key="#com.intellij.ide.util.MemberChooser" timestamp="1619081679426">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="643" y="-882" key="#com.intellij.ide.util.MemberChooser/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1618379488547" />
+    <state x="643" y="-882" key="#com.intellij.ide.util.MemberChooser/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619081679426" />
     <state x="229" y="-1057" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1614846367454">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
@@ -218,45 +218,45 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="449" y="106" key="#com.intellij.unscramble.UnscrambleDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1618740173174" />
-    <state width="1868" height="397" key="GridCell.Tab.0.bottom" timestamp="1619075617782">
+    <state width="1868" height="220" key="GridCell.Tab.0.bottom" timestamp="1619092836648">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="397" key="GridCell.Tab.0.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619075617782" />
+    <state width="1868" height="220" key="GridCell.Tab.0.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619092836648" />
     <state width="1628" height="341" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593220" />
-    <state width="1868" height="397" key="GridCell.Tab.0.center" timestamp="1619075617777">
+    <state width="1868" height="220" key="GridCell.Tab.0.center" timestamp="1619092836646">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="397" key="GridCell.Tab.0.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619075617777" />
+    <state width="1868" height="220" key="GridCell.Tab.0.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619092836646" />
     <state width="1628" height="341" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593219" />
-    <state width="1868" height="397" key="GridCell.Tab.0.left" timestamp="1619075617776">
+    <state width="1868" height="220" key="GridCell.Tab.0.left" timestamp="1619092836645">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="397" key="GridCell.Tab.0.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619075617776" />
+    <state width="1868" height="220" key="GridCell.Tab.0.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619092836645" />
     <state width="1628" height="341" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593218" />
-    <state width="1868" height="397" key="GridCell.Tab.0.right" timestamp="1619075617781">
+    <state width="1868" height="220" key="GridCell.Tab.0.right" timestamp="1619092836647">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="397" key="GridCell.Tab.0.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619075617781" />
+    <state width="1868" height="220" key="GridCell.Tab.0.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619092836647" />
     <state width="1628" height="341" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593219" />
-    <state width="1868" height="397" key="GridCell.Tab.1.bottom" timestamp="1619075617653">
+    <state width="1868" height="220" key="GridCell.Tab.1.bottom" timestamp="1619092836536">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="397" key="GridCell.Tab.1.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619075617653" />
+    <state width="1868" height="220" key="GridCell.Tab.1.bottom/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619092836536" />
     <state width="1628" height="341" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593108" />
-    <state width="1868" height="397" key="GridCell.Tab.1.center" timestamp="1619075617652">
+    <state width="1868" height="220" key="GridCell.Tab.1.center" timestamp="1619092836535">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="397" key="GridCell.Tab.1.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619075617652" />
+    <state width="1868" height="220" key="GridCell.Tab.1.center/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619092836535" />
     <state width="1628" height="341" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593107" />
-    <state width="1868" height="397" key="GridCell.Tab.1.left" timestamp="1619075617652">
+    <state width="1868" height="220" key="GridCell.Tab.1.left" timestamp="1619092836535">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="397" key="GridCell.Tab.1.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619075617652" />
+    <state width="1868" height="220" key="GridCell.Tab.1.left/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619092836535" />
     <state width="1628" height="341" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593107" />
-    <state width="1868" height="397" key="GridCell.Tab.1.right" timestamp="1619075617653">
+    <state width="1868" height="220" key="GridCell.Tab.1.right" timestamp="1619092836536">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1868" height="397" key="GridCell.Tab.1.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619075617653" />
+    <state width="1868" height="220" key="GridCell.Tab.1.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1619092836536" />
     <state width="1628" height="341" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1618749593107" />
     <state x="504" y="-837" width="745" height="616" key="find.popup" timestamp="1619074741062">
       <screen x="-83" y="-1057" width="1920" height="1057" />
