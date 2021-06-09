@@ -8,6 +8,7 @@
     <artifactId>deep-in-java</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
+    <name>HelloWorld</name>
 
 
     <dependencies>
@@ -16,6 +17,11 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>9.4.12.v20180830</version>
         </dependency>
     </dependencies>
 
