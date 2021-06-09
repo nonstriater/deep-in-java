@@ -1,4 +1,4 @@
-package com.company;
+package com.base;
 
 public class Test1 {
 

@@ -1,7 +1,5 @@
 package com.jvm.oom;
 
-import com.company.Array;
-
 import java.util.ArrayList;
 import java.util.List;
 

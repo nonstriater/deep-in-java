@@ -1,4 +1,4 @@
-package com.company;
+package com.base;
 
 /**
  * 装箱 & 拆箱

@@ -1,4 +1,4 @@
-package com.company;
+package com.base;
 
 import java.util.HashMap;
 import java.util.Hashtable;
