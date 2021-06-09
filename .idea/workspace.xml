@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bd44994-c0ae-4eb1-85fb-3057b9e0f3cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/mysql/DBDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/redis/RedisDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zk/ZKDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kafka/KafkaDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/rocketmq/RocketmqDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/local/mysql.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/local/redis.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/local/zk.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.09208103" />
   </component>
@@ -114,11 +114,11 @@
       </method>
     </configuration>
     <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Test1" />
+      <option name="MAIN_CLASS_NAME" value="com.base.Test1" />
       <module name="deep in java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="com.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,7 +178,7 @@
       <workItem from="1619932149038" duration="2099000" />
       <workItem from="1620627411396" duration="20239000" />
       <workItem from="1623142718008" duration="1966000" />
-      <workItem from="1623165595654" duration="5741000" />
+      <workItem from="1623165595654" duration="6298000" />
     </task>
     <servers />
   </component>
@@ -246,6 +246,10 @@
     </state>
     <state width="1868" height="436" key="GridCell.Tab.1.right/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1623207553418" />
     <state width="1628" height="186" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1617292275517" />
+    <state x="240" y="-1049" key="SettingsEditor" timestamp="1623235907934">
+      <screen x="-83" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="240" y="-1049" key="SettingsEditor/-83.-1057.1920.1057/0.23.1680.1027@-83.-1057.1920.1057" timestamp="1623235907934" />
     <state x="458" y="-1032" width="838" height="1032" key="search.everywhere.popup" timestamp="1623142689592">
       <screen x="-83" y="-1057" width="1920" height="1057" />
     </state>
