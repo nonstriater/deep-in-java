@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+    <Properties>
+        <Property name="LOG_HOME">/Users/didi/Desktop/java/oflogs/deep-in-java</Property>
+    </Properties>
+    <Appenders>
+        <RollingFile name="FileSys" fileName="${LOG_HOME}/sys/sys.log" filePattern="${LOG_HOME}/sys/sys.log.%d{yyyyMMddHH}">
+            <PatternLayout pattern="[%d %-5level %t %logger{1}] %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <DefaultRolloverStrategy>
+                <Delete basePath="${LOG_HOME}/sys/" maxDepth="2">
+                    <IfFileName glob="*.log.*" />
+                    <IfLastModified age="10d" />
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="FileSys"/>
+        </Root>
+        <Logger name="log.bid.sys" level="info" additivity="false">
+            <AppenderRef ref="FileSys"/>
+        </Logger>
+    </Loggers>
+</Configuration>
