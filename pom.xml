@@ -67,6 +67,12 @@
             <artifactId>log4j-slf4j-impl</artifactId>
             <version>2.11.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.16</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
