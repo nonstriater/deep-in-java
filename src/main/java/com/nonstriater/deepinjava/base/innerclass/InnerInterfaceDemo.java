@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.innerclass;
+package com.nonstriater.deepinjava.base.innerclass;
 
 public interface InnerInterfaceDemo {
 

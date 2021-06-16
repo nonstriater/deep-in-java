@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.jol;
+package com.nonstriater.deepinjava.jvm.jol;
 
 import org.openjdk.jol.info.ClassLayout;
 import org.openjdk.jol.info.GraphLayout;
@@ -7,6 +7,9 @@ import org.openjdk.jol.vm.VM;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
+/**
+ * dig 对象内存模型
+ */
 public class UserDemo {
 
     private String name;//4字节
