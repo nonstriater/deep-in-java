@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.annotation;
+package com.nonstriater.deepinjava.base.annotation;
 
 import java.lang.annotation.*;
 

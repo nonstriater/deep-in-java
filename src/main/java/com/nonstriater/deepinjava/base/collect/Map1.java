@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.base;
+package com.nonstriater.deepinjava.base.collect;
 
 import java.util.HashMap;
 import java.util.Hashtable;

@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.base;
+package com.nonstriater.deepinjava.base.strings;
 
 public class String1 {
 

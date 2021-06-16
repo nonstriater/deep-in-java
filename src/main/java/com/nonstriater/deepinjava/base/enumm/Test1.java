@@ -1,4 +1,6 @@
-package com.nonstriater.deepinjava.base;
+package com.nonstriater.deepinjava.base.enumm;
+
+import com.nonstriater.deepinjava.base.enumm.MyEnum;
 
 public class Test1 {
 

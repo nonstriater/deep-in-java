@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.base;
+package com.nonstriater.deepinjava.base.collect;
 
 import java.util.ArrayList;
 import java.util.Arrays;
