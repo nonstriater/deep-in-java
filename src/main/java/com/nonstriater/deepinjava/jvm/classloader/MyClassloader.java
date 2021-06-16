@@ -1,4 +1,4 @@
 package com.nonstriater.deepinjava.jvm.classloader;
 
-public class MyClassloader {
+public class MyClassloader extends ClassLoader {
 }
