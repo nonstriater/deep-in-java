@@ -2,7 +2,7 @@ package com.nonstriater.deepinjava.thread.volati;
 
 /**
  * volatile 并不能保证对象的原子性
- * VolatileTest2  例子在我的电脑上 100% 跑出来 结果 100000， 奇怪，没有验证到结果
+ * VolatileTest2  例子在我的电脑上 100% 跑出来 结果 100,000， 奇怪，没有验证到结果
  */
 public class MyVolatile2 implements Runnable {
 
