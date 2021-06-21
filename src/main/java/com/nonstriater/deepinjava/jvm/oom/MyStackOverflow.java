@@ -1,7 +1,7 @@
 package com.nonstriater.deepinjava.jvm.oom;
 
 /**
- * VM args: -Xss256k
+ * VM args: -Xss256k， 循环调用
  *
  * stack leng = 1972
  * Exception in thread "main" java.lang.StackOverflowError
