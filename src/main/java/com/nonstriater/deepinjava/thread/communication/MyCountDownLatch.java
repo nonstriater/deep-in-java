@@ -21,6 +21,8 @@ public class MyCountDownLatch {
         }
         //等待计算线程执行完
         countDownLatch.await();
+
+        //前面计算完以后才开始下一步操作
         System.out.println(num);
     }
 }

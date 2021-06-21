@@ -20,6 +20,7 @@ public class CyclicBarrierDemo {
         System.out.printf(threadName + "work %d ms\n", prepareTime);
 
         cyclicBarrier.await();
+
         System.out.println("all prepare work done, all thread start work again");
     }
 
