@@ -8,7 +8,64 @@ import java.util.stream.Collectors;
 
 public class Array {
 
+    private  static class Person {
+        String name;
+        int age;
+        String habit;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        public void setAge(int age) {
+            this.age = age;
+        }
+
+        public String getHabit() {
+            return habit;
+        }
+
+        public void setHabit(String habit) {
+            this.habit = habit;
+        }
+    }
+
     public static void main(String[] args){
+
+        {
+            List<Person> ppls = new LinkedList<>();
+            Person p1 = new Person();
+            p1.setName("lily");
+            p1.setAge(20);
+            ppls.add(p1);
+
+            Person p2 = new Person();
+            p2.setName("lucy");
+            p2.setAge(25);
+            ppls.add(p2);
+
+            System.out.println(ppls);
+
+            ppls.removeIf(person -> {
+                if (person.getName().equals("lucy")) {
+                    return true;
+                }
+
+                person.setHabit("reading");
+                return false;
+            });
+
+            System.out.println(ppls);
+
+        }
 
         {
             List<String> ids = new ArrayList<>(10);
