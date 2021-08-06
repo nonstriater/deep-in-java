@@ -1,4 +1,4 @@
 package com.nonstriater.deepinjava.netty;
 
-public class NettyDemo {
+public class NettyClientDemo {
 }
