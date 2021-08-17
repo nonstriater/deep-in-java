@@ -8,7 +8,9 @@ public class box {
     public static void main(String[] args) {
 
         //test1();
-        test2();
+        //test2();
+        //test3();
+        test4();
     }
 
     public static void test1(){
@@ -30,25 +32,57 @@ public class box {
     public static void test2(){
         int i = 40;
         int i0 = 40;
+        System.out.println("i=i0\t" + (i == i0)); //true
+
         Integer i1 = 40;
         Integer i2 = 40;
+        System.out.println("i1=i2\t" + (i1 == i2));//true
+
         Integer i3 = 0;
+        System.out.println("i1=i2+i3\t" + (i1 == i2 + i3)); //栈上拆箱
+
+
         Integer i4 = new Integer(40);
         Integer i5 = new Integer(40);
         Integer i6 = new Integer(0);
+        System.out.println("i4=i5\t" + (i4 == i5)); //new 的对象在堆上，false
+        System.out.println("i4=i5+i6\t" + (i4 == i5 + i6));//栈上拆箱
+
         Double d1=1.0;
         Double d2=1.0;
-
-        System.out.println("i=i0\t" + (i == i0));
-        System.out.println("i1=i2\t" + (i1 == i2));
-
-        System.out.println("i1=i2+i3\t" + (i1 == i2 + i3)); //栈上拆箱
-        System.out.println("i4=i5\t" + (i4 == i5)); //new 的对象在堆上，false
-        System.out.println("i4=i5+i6\t" + (i4 == i5 + i6));
         System.out.println("d1=d2\t" + (d1==d2)); //false
 
         System.out.println();
     }
 
+    public static void test3(){
 
+        Long  l1 = 1l;
+        Long  l2 = 1l;
+        System.out.println(l1 == l2);//true
+
+        Long  l3 = 10000l;
+        Long  l4 = 10000l;
+        System.out.println(l3 == l4);//false
+
+        Long  l5 = 100l;
+        Long  l6 = 100l;
+        System.out.println(l5 == l6);//true
+
+
+        Long i1 = new Long(120);
+        Long i2 = new Long(120);
+
+        System.out.println(i1 == i2);//false
+
+    }
+
+
+    public static void test4(){
+
+        Long  l3 = 10000l;
+        Long  l4 = 10000l;
+        System.out.println(l3 == l4);//false
+
+    }
 }
