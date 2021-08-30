@@ -20,6 +20,7 @@ public class Map2 {
 
         System.out.println(eveModelConfig.containsKey(111l)); //true
         System.out.println(eveModelConfig.containsKey(22222l)); //true
+        System.out.println(eveModelConfig.containsKey(22222)); //false
 
         System.out.println(eveModelConfig.containsKey(123)); //false
 
