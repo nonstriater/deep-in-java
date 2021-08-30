@@ -34,6 +34,7 @@ public class QueueDemo {
             }
 
             head = head.next;
+            size --;
             return head.value;
         }
 
@@ -45,6 +46,7 @@ public class QueueDemo {
             Node node = new Node();
             node.value = value;
 
+            size ++;
             tail = node;
 
             if (head == null) {
