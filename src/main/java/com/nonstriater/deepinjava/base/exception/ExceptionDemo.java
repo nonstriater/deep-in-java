@@ -12,7 +12,6 @@ public class ExceptionDemo {
         } catch (Exception e) {
             throw  new RuntimeException(e);
         }
-
     }
 
 }
