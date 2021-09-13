@@ -3,7 +3,7 @@ package com.nonstriater.deepinjava.algo.tree;
 import java.util.*;
 
 /**
- * 按层遍历
+ * 按层遍历， BFS算法
  */
 public class LevelOrder {
 
