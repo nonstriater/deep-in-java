@@ -2,6 +2,7 @@ package com.nonstriater.deepinjava.base.collect;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class Map2 {
 
@@ -16,6 +17,14 @@ public class Map2 {
         eveModelConfig.put(22222l, 3002);
         //eveModelConfig.put(1, 2);
     }
+
+    private static Map<Character, Integer> charMap = new HashMap<>();
+    static {
+        charMap.put('a', 1);
+        charMap.put('b', 2);
+        charMap.get('a');
+    }
+
 
     public static void main(String []args){
 
