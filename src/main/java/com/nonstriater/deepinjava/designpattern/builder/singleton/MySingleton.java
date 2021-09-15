@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.designpattern.singleton;
+package com.nonstriater.deepinjava.designpattern.builder.singleton;
 
 public class MySingleton {
 

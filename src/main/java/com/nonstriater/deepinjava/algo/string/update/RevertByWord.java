@@ -8,23 +8,25 @@ public class RevertByWord {
     public static void main(String[] args){
 
         String input = "I am a student.";
-
-        System.out.println(reverseByWord(input));
+        char[] sourceChar = input.toCharArray();
+        System.out.println(reverseByWord(sourceChar));
 
     }
 
     /**
      * 按单词翻转； 例如输入“I am a student.”，则输出“student. a am I”。
-     * @param source
+     * @param sourceChar
      * @return
      */
-    public static String reverseByWord(String source) {
-
-        char[] sourceChar =  source.toCharArray();
+    public static char[] reverseByWord(char[] sourceChar) {
 
         return null;
     }
 
+    private static char[] reverse(char[] source) {
+
+        return null;
+    }
 
 
 }
