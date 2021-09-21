@@ -15,14 +15,7 @@ public class String2 {
         str.a = 12;
         str.b = "233";
 
-        String s = String.format("str:%s", str);
+        String s = String.format("str:%s", str);//str:com.nonstriater.deepinjava.base.strings.String2@7ef20235
         System.out.println(s);
     }
-
-    private void test2(){
-
-
-
-    }
-
 }

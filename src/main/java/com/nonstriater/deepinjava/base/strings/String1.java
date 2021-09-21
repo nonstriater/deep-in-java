@@ -1,5 +1,8 @@
 package com.nonstriater.deepinjava.base.strings;
 
+/**
+ * StringBuffer VS StringBuilder
+ */
 public class String1 {
 
     //StringBuffer  线程安全 syn

@@ -1,5 +1,8 @@
 package com.nonstriater.deepinjava.base.strings;
 
+/**
+ * 字符串连接运算符 +  优先级
+ */
 public class String3 {
 
     public static void main(String[] args){
