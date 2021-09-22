@@ -38,4 +38,13 @@ public class String4 {
     }
 
 
+    // intern()
+    private static void test3(){
+        String a = new String("a");
+        String b = new String("a");
+
+        //这里intern返回的就是常量池里面的引用
+        System.out.println(a.intern() == b.intern());//true
+    }
+
 }

@@ -2,6 +2,7 @@ package com.nonstriater.deepinjava.base.strings;
 
 /**
  * 字符串连接运算符 +
+ * 常量优化机制 : 如果 = 表达式右边全部是常量， 编译器会计算出 = 右边的表达式结果， “abc”
  */
 public class String5 {
     public static void main(String[] args) {
@@ -11,6 +12,7 @@ public class String5 {
         test2();
     }
 
+    //常量优化机制 : 如果 = 表达式右边全部是常量， 编译器会计算出 = 右边的表达式结果， “abc”
     private static void test1(){
         String str = "a" + "b";
         String str2 = "ab";
