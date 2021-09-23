@@ -2,6 +2,9 @@ package com.nonstriater.deepinjava.algo.numerical;
 
 import java.util.Objects;
 
+/**
+ * int <--> Ip 相互转换
+ */
 public class IPUtil {
 
     public static void main(String[] args){
