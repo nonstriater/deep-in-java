@@ -3,6 +3,9 @@ package com.nonstriater.deepinjava.algo.search;
 /**
  * 单调非递减数组, 指定一个数,  返回最小下标
  * 单调非递减数组 ： 就是 有序（有重复数字的）递增数组
+ *
+ * 在排序数组中查找元素的第一个和最后一个位置（中等）
+ * 难点： 细节是魔鬼，mid 加一还是减一，while 里到底用 <= 还是 <
  */
 public class BinarySearch {
 
