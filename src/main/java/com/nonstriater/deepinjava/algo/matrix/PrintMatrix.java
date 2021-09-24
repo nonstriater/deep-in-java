@@ -9,6 +9,8 @@ import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 public class PrintMatrix {
 
     public static void main(String[] args){
+
+        //bug: 1 2 3 4 5 10 15 14 13 12 11 6 7 8 9 8 7
         int[][] matrix = {
                 {1,2,3,4,5},
                 {6,7,8,9,10},
@@ -25,6 +27,18 @@ public class PrintMatrix {
                 {17,18,19,20,21,22}
         };
         printMatrix(matrix2, 6, 4);
+
+        System.out.println();
+
+        int[][] matrix3 = {
+                {1,2,3},
+                {6,7,8},
+                {11,12,13},
+                {17,18,19},
+                {21,22,23}
+        };
+        printMatrix(matrix3, 3, 5);
+
     }
 
     /**
@@ -70,13 +84,13 @@ public class PrintMatrix {
             System.out.printf("%d " , matrix[i][endX]);
         }
 
-        //下
-        for (int i = endX-1; i >= start ; i--) {
+        //下  start < endY 基数行时避免打印2遍
+        for (int i = endX-1; i >= start && start < endY ; i--) {
             System.out.printf("%d " , matrix[endY][i]);
         }
 
-        //左
-        for (int i = endY-1; i > start ; i--) {
+        //左,  start < endX 基数列时避免打印2遍
+        for (int i = endY-1; i > start && start < endX ; i--) {
             System.out.printf("%d " , matrix[i][start]);
         }
     }
