@@ -1,8 +1,8 @@
 package com.nonstriater.deepinjava.algo.search;
 
 /**
- * 单调非递减数组,  指定一个数,  返回最小下标
- * 单调非递减数组 ： 有序（有重复数字的）递增数组
+ * 单调非递减数组, 指定一个数,  返回最小下标
+ * 单调非递减数组 ： 就是 有序（有重复数字的）递增数组
  */
 public class BinarySearch {
 

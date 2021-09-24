@@ -1,7 +1,7 @@
 package com.nonstriater.deepinjava.algo.list;
 
 /**
- * Fibonacci数列
+ * Fibonacci数列， 动态规划问题
  * n=0 0
  * n=1,2 f(n) = 1
  * f(n) = f(n-1)+f(n-2)

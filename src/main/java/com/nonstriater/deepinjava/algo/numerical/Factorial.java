@@ -2,6 +2,7 @@ package com.nonstriater.deepinjava.algo.numerical;
 
 /**
  * 阶乘
+ * 难点是 大数阶乘（比如 10w 阶乘）
  */
 public class Factorial {
 
