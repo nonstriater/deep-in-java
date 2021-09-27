@@ -31,6 +31,12 @@ public class FindKnode {
 
     }
 
+    /**
+     * 2遍循环
+     * @param head
+     * @param k
+     * @return
+     */
     public static int findKnode(LinkedNode head, int k){
         LinkedNode forword = head;
 
