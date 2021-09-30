@@ -109,6 +109,5 @@ public class MergeSeqLink {
             l2.next = mergeSeqLink2(l2.next,l1);
             return l2;
         }
-
     }
 }

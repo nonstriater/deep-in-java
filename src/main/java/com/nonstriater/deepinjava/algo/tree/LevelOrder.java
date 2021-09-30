@@ -1,5 +1,7 @@
 package com.nonstriater.deepinjava.algo.tree;
 
+import com.nonstriater.deepinjava.algo.test.Demo1;
+
 import java.util.*;
 
 /**
@@ -31,6 +33,31 @@ public class LevelOrder {
         n4.right = n5;
 
         System.out.println(levelOrder(n1));
+    }
+
+    public static void levelReverse(Node root){
+
+        if (root == null) {
+            return;
+        }
+
+        LinkedList<Node> list = new LinkedList<Node>();
+        list.add(root);
+        while (list.size() > 0) {
+
+            //出头节点
+            Node node = list.poll();
+            System.out.printf("%d",node.value);
+
+            //加子节点
+            if (node.left != null) {
+                list.add(node.left);
+            }
+
+            if (node.right != null) {
+                list.add(node.right);
+            }
+        }
     }
 
     public static ArrayList<ArrayList<Integer>> levelOrder(Node node){
