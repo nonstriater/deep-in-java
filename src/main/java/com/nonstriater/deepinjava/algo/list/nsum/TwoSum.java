@@ -32,6 +32,7 @@ public class TwoSum {
         for(int i = 0; i < nums.length; i++){
             map.put(nums[i], i);
         }
+
         for(int i = 0; i < nums.length; i++){
             int temp = target - nums[i];
             if(map.containsKey(temp) && map.get(temp) != i){
