@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.algo.string;
+package com.nonstriater.deepinjava.algo.string.cal;
 
 /**
  * 字符串相乘（中等）

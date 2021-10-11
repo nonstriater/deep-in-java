@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 寻找 2 个数之和
+ * 寻找 2 个数之和， 返回他们的数组下标
  */
 public class TwoSum {
 
@@ -28,6 +28,7 @@ public class TwoSum {
 
         int[] res =new int[2];
 
+        //空间换时间
         Map<Integer, Integer> map= new HashMap<>();
         for(int i = 0; i < nums.length; i++){
             map.put(nums[i], i);
