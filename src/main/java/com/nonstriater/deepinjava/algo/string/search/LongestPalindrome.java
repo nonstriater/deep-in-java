@@ -1,7 +1,7 @@
 package com.nonstriater.deepinjava.algo.string.search;
 
 /**
- * 最长回文子串（中等） 动态规划
+ * 最长回文子串（难度 中等） 动态规划
  * 回文是指正着读和倒着读，结果一些样，比如abcba或abba
  *
  * 示例 1：输入：s = "babad"
