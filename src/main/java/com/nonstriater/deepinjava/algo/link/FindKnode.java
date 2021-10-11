@@ -40,7 +40,7 @@ public class FindKnode {
     public static int findKnode(LinkedNode head, int k){
         LinkedNode forword = head;
 
-        //
+        //第一遍循环，先走k step
         for (int i = 0; i < k ; i++) {
             if (forword == null) {
                 //throw new IllegalStateException("link length less than k");
@@ -49,7 +49,7 @@ public class FindKnode {
             forword = forword.next;
         }
 
-        //
+        //第二遍循环，一起走
         LinkedNode back = head;
         while (forword != null) {
             forword = forword.next;

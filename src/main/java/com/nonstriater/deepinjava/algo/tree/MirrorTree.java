@@ -2,6 +2,7 @@ package com.nonstriater.deepinjava.algo.tree;
 
 /**
  * 镜像， 翻转二叉树
+ * 就是交换每个节点的左右子节点
  */
 public class MirrorTree {
 

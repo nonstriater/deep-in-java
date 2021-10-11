@@ -1,7 +1,7 @@
 package com.nonstriater.deepinjava.algo.link;
 
 /**
- * 翻转链表
+ * 翻转链表， 使用递归实现
  * 1. 翻转整个链表
  * 2. 翻转链表的前 n 个节点
  * 3. 翻转链表的部分区间 [m,n]

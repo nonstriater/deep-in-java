@@ -21,17 +21,16 @@ public class LongestConsecutive {
 
         //容器
         Set<Integer> set = new HashSet<>();
-
         for (int n : nums){
             set.add(n);
         }
 
-        //
         int longestLen = 0;
         for (int i = 0 ;i < nums.length ; i++){
 
             int x = nums[i];
 
+            //set中查找
             int currentLen = 1;
             while (set.contains(x-1)){
                 x = x - 1;
