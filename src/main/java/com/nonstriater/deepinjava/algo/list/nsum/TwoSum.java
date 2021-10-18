@@ -36,6 +36,8 @@ public class TwoSum {
 
         for(int i = 0; i < nums.length; i++){
             int temp = target - nums[i];
+
+            //不能是一个数 两倍 加和 为  target
             if(map.containsKey(temp) && map.get(temp) != i){
                 res[0] = map.get(temp);
                 res[1] = i;
