@@ -2,6 +2,7 @@ package com.nonstriater.deepinjava.algo.string.search;
 
 import org.apache.commons.collections.map.LinkedMap;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -17,7 +18,11 @@ public class LongestSubString {
 
     }
 
+
+
     //java字符串处理时，字典定义 map<char, int> 不太方便
+    //map<Character, int>
+    //Map<Character, Integer> window = new HashMap<>();
     int lengthOfLongestSubstring(char[] s) {
         return 0;
         //unordered_map<char, int> window;
@@ -37,6 +42,7 @@ public class LongestSubString {
 //                // 进行窗口内数据的一系列更新
 //                window[d]--;
 //            }
+//
 //            // 在这里更新答案
 //            res = max(res, right - left);
 //        }
@@ -48,12 +54,14 @@ public class LongestSubString {
         int left = 0, right = 0;
         int res = 0; // 记录结果
 
-        while (right++ < s.length) {
-            //窗口变大
+        Map<Character, Integer> window = new HashMap<>();
+        while (right < s.length) {
             char c = s[right];
+            //窗口变大
+            right++;
 
+            //判断左侧窗口是否要收缩
             char d = s[left];
-            // 判断左侧窗口是否要收缩
             if(d == c) {
                 left ++;
             }
