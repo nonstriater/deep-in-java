@@ -1,7 +1,7 @@
 package com.nonstriater.deepinjava.algo.string.search;
 
 /**
- * 最长回文子串（难度 中等） 动态规划
+ * 最长回文子串（难度 中等）（难度 中等）
  * 回文是指正着读和倒着读，结果一些样，比如abcba或abba
  *
  * 示例 1：输入：s = "babad"
@@ -12,9 +12,13 @@ package com.nonstriater.deepinjava.algo.string.search;
  * 输出："bb"
  *
  * 思路1: 暴力
- * 思路2: 动态规划 ,  s[i,j] 是子串，
- * 如果 S[i+1,j-1]S[i+1,j−1] 是回文串，那么只要 S[ i ] == S[ j ] ，就可以确定 S[i,j]S[i,j]也是回文串了。
  *
+ * 思路2: 动态规划 ,  s[i,j] 是子串，
+ * 如果 S[i+1,j-1]是回文串，那么只要 S[ i ] == S[ j ] ，就可以确定 S[i,j] 也是回文串了。
+ * 需要额外的空间O（N^2)，算法复杂度也是O(N^2)
+ *
+ * 思路3: 中心扩展，把给定的字符串的每一个字母当做中心，向两边扩展，这样来找最长的子回文串。要考虑 aba, abba，这样长度为基数or偶数
+ * 算法复杂度为O(N^2)；
  */
 public class LongestPalindrome {
 

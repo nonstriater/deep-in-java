@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 最长无重复子串 （滑动串口， 难度 中等）
  * 给一个字符串，找出不包含有重复字符的最长子串的长度
  * 如 ”abcabbcbb“ 输出 3
  */

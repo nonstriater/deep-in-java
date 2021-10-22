@@ -1,5 +1,7 @@
 package com.nonstriater.deepinjava.algo.link;
 
+import com.nonstriater.deepinjava.algo.test.Demo2;
+
 /**
  * 找出两个链表的第一个公共结点
  * 有没有可能一遍遍历就解决问题呢？
@@ -60,14 +62,24 @@ public class ShareNode {
 
 
     /**
-     * 两个链表 是否 相交;
+     * 两个链表 是否 相交;  直接判断节点最后指针是否一样就可以了
      * 链表是否有环， 这个才使用快慢指针
      * @param l1
      * @param l2
      * @return
      */
-    public static LinkedNode isCross(LinkedNode l1, LinkedNode l2){
+    public static boolean isCross(LinkedNode l1, LinkedNode l2){
 
-        return null;
+        LinkedNode tail1 = l1;
+        LinkedNode tail2 = l2;
+        while (tail1.next != null) {
+            tail1 =tail1.next;
+        }
+
+        while (tail2.next != null) {
+            tail2 =tail2.next;
+        }
+
+        return tail1 == tail2;
     }
 }
