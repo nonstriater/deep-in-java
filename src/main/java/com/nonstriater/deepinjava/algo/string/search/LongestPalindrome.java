@@ -31,6 +31,7 @@ public class LongestPalindrome {
 
     /**
      * 代码难点：
+     * 动态规划思路：
      * 二维数组  boolean[][] dp = new boolean[n][n];
      * @param s
      * @return
