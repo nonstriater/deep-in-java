@@ -6,7 +6,15 @@ import java.util.concurrent.locks.ReentrantLock;
 public class ThreeThreadLock {
 
     private static Lock lock=new ReentrantLock();
-    private static int state=0;//通过state的值来确定是哪个线程打印
+
+    /**
+     * 通过 lock 确保只有1个线程能修改 state 变量
+     * 通过state的值来确定是哪个线程打印
+     * state%3 == 0 线程A打印
+     * state%3 == 1 线程B打印
+     * state%3 == 2 线程C打印
+     */
+    private static int state=0;//
 
     static class ThreadA extends Thread{
         @Override
@@ -16,8 +24,8 @@ public class ThreeThreadLock {
                     lock.lock();
                     while(state%3==0){// 多线程并发，不能用if，必须用循环测试等待条件，避免虚假唤醒
                         System.out.print("A");
-                        state++;
-                        i++;
+                        state++;//执行一次以后，就会释放锁
+                        i++;//统计执行次数
                     }
                 }finally{
                     lock.unlock();

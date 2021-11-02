@@ -7,7 +7,18 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class ThreeThreadAtomicInteger {
 
+    /**
+     * 通过 lock 确保只有1个线程能修改 state 变量
+     * 通过state的值来确定是哪个线程打印
+     * state%3 == 0 线程A打印
+     * state%3 == 1 线程B打印
+     * state%3 == 2 线程C打印
+     *
+     * AtomicInteger 即可以用来计数，又可以保证线程安全
+     */
     private AtomicInteger ai = new AtomicInteger(0);
+
+    //
     private static final int MAX_SYC_VALUE = 3 * 10;
 
     private class RunnableA implements Runnable {
@@ -55,6 +66,7 @@ public class ThreeThreadAtomicInteger {
         service.execute(atomic_ABC.new RunnableB());
         service.execute(atomic_ABC.new RunnableC());
 
+        //会等添加的task执行完后，才结束
         service.shutdown();
     }
 

@@ -55,8 +55,10 @@ public class ThreeThreadSynchronized {
 
         new Thread(pa).start();
         Thread.sleep(10);// 保证初始ABC的启动顺序
+
         new Thread(pb).start();
         Thread.sleep(10);
+
         new Thread(pc).start();
         Thread.sleep(10);
     }
