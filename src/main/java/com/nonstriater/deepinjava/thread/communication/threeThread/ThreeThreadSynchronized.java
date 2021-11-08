@@ -63,5 +63,4 @@ public class ThreeThreadSynchronized {
         Thread.sleep(10);
     }
 
-
 }

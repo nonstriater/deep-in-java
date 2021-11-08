@@ -61,5 +61,4 @@ public class ThreeThreadSemaphare {
         new ThreadC().start();
     }
 
-
 }
