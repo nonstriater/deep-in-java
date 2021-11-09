@@ -2,7 +2,7 @@ package com.nonstriater.deepinjava.algo.queue;
 
 /**
  * 队列， 实现一个poll/offer, take/put ,  push/pop
- * poll 头节点取一个元素
+ * poll 头节点取一个元素，如果空队列返回null
  */
 public class QueueDemo {
 
