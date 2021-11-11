@@ -40,6 +40,7 @@ public class Array {
 
     public static void main(String[] args){
 
+        //LinkedList
         {
             List<Person> ppls = new LinkedList<>();
             Person p1 = new Person();
@@ -67,6 +68,7 @@ public class Array {
 
         }
 
+        //ArrayList
         {
             List<String> ids = new ArrayList<>(10);
             System.out.println(ids.size()); //有个 private int size 变量标记容量大小

@@ -46,6 +46,7 @@ public class Permutation {
 
             // 做选择
             track.add(nums[i]);
+
             // 进入下一层决策树
             backtrack(nums, track);
             // 取消选择
