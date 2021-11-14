@@ -7,7 +7,7 @@ import java.util.Queue;
 
 /**
  * 二叉树最小高度(深度)，这是一个 BFS
- * 思路：
+ * 思路：BFS
  */
 public class MinDepth {
 

@@ -1,7 +1,7 @@
 package com.nonstriater.deepinjava.algo.string.search;
 
 /**
- * 最长回文子串（难度 中等）（难度 中等）
+ * 最长回文子串（难度 中等）
  * 回文是指正着读和倒着读，结果一些样，比如abcba或abba
  *
  * 示例 1：输入：s = "babad"
@@ -74,6 +74,5 @@ public class LongestPalindrome {
 
         return s.substring(start,start + max);
     }
-
 
 }

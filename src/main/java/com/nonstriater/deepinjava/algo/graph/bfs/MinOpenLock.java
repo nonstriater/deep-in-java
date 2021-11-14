@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.algo.graph;
+package com.nonstriater.deepinjava.algo.graph.bfs;
 
 import java.util.HashSet;
 import java.util.LinkedList;
