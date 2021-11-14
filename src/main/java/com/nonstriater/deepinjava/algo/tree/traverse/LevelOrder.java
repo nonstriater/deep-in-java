@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.algo.tree;
+package com.nonstriater.deepinjava.algo.tree.traverse;
 
 import com.nonstriater.deepinjava.algo.test.Demo1;
 

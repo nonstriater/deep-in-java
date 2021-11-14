@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.algo.tree;
+package com.nonstriater.deepinjava.algo.graph;
 
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -7,6 +7,7 @@ import java.util.Set;
 
 /**
  * 解开密码锁的最少次数  难度中等
+ * 思路：
  * 4个波轮转盘锁，每个10个数字 0~9
  * 列表 deadends 包含一组死亡数字，一旦波轮数字和列表里的任何一个元素相同，锁将永久锁定
  * target 代表可以解锁的数字，输出解锁最小的旋转次数
