@@ -28,31 +28,40 @@ package com.nonstriater.deepinjava.algo.list;
 
 public class StatNumber {
 
-    public static void main(String args){
+    public static void main(String[] args){
         int[] nums = new int[]{2,5,5,2,3};
         statNumber(nums);
 
-        for (int i : nums) {
+        //System.out.println(nums);
+
+        for (int i=0; i< nums.length; i++ ) {
             System.out.println(i + "出现次数：" + nums[i]);
         }
     }
 
     //{2, 5, 5, 2, 3}
+    //{5, -1, 5, 2, 3}
+    //{3, -1, 5, 2, -1}
+    //{5, -1, -1, 2, -1}
+    //{0, -1, -1, 2, -2}
+    //{0, -2, -1, 0, -2}
     public static void statNumber(int[] nums){
         int index = 0;
         while (index < nums.length) {
 
-            if (nums[index] < 0) {
+            int temp =  nums[index] -1;
+            if (temp < 0) {
                 index ++ ;
                 continue;
             }
 
-            int temp =  nums[index] -1;
-            if (nums[temp] > 0) {
+            if (nums[temp] > 0) {//
+                nums[index] = nums[temp];
                 nums[temp] = -1;
+            } else {
+                nums[temp] -= 1; //num[temp]--
+                nums[index] = 0;
             }
-
-
         }
 
     }
