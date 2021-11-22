@@ -17,20 +17,56 @@ package com.nonstriater.deepinjava.algo.string.search;
  * 如果 S[i+1,j-1]是回文串，那么只要 S[ i ] == S[ j ] ，就可以确定 S[i,j] 也是回文串了。
  * 需要额外的空间O（N^2)，算法复杂度也是O(N^2)
  *
- * 思路3: 中心扩展，把给定的字符串的每一个字母当做中心，向两边扩展，这样来找最长的子回文串。要考虑 aba, abba，这样长度为基数or偶数
+ * 思路3: 中心扩展，可以每次循环选择一个中心，进行左右扩展，判断左右字符是否相等即可
+ * 把给定的字符串的每一个字母当做中心，向两边扩展，这样来找最长的子回文串。要考虑 aba, abba，这样长度为基数or偶数
  * 算法复杂度为O(N^2)；
  */
 public class LongestPalindrome {
 
     public static void main(String[] args) {
-
         System.out.println(longestPalindrome("babad"));
-
         System.out.println(longestPalindrome("cbbd"));
     }
 
     /**
-     * 代码难点：
+     * 中心扩展的思路
+     * 由于存在奇数的字符串和偶数的字符串，所以我们需要从一个字符开始扩展，或者从两个字符之间开始扩展，所以总共有
+     * n +（n-1）个中心
+     * @param s
+     * @return
+     */
+    public static String longestHW(String s) {
+        if (s == null || s.length() < 1) {
+            return "";
+        }
+        int start = 0, end = 0;
+        for (int i = 0; i < s.length(); i++) {
+            int len1 = expandAroundCenter(s, i, i);//基数长度字符串
+            int len2 = expandAroundCenter(s, i, i+1);//偶数长度字符串
+
+            int len = Math.max(len1, len2);//取大结果
+            if (len > end - start) {
+                start = i - (len-1) / 2;
+                end = i + len / 2;
+            }
+        }
+
+        return s.substring(start, end + 1);
+    }
+
+    // 返回以 s[l] 和 s[r] 为中心的最长回文串
+    public static  int expandAroundCenter(String s, int left, int right) {
+        int L = left, R = right;
+        while (L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {
+            L--;
+            R++;
+        }
+        return (R-1) - (L+1) + 1;
+    }
+
+
+
+    /**
      * 动态规划思路：
      * 二维数组  boolean[][] dp = new boolean[n][n];
      * @param s
