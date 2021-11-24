@@ -110,4 +110,57 @@ public class MergeSeqLink {
             return l2;
         }
     }
+
+
+    /**
+     * mt
+     * @param l1 ListNode类
+     * @param l2 ListNode类
+     * @return ListNode类
+     */
+    public LinkedNode mergeTwoLists (LinkedNode l1, LinkedNode l2) {
+
+        if(l1 == null){
+            return l2;
+        }
+
+        if(l2 == null){
+            return l1;
+        }
+
+        //两个都不为空
+        LinkedNode head = null;
+        if(l1.value < l2.value){
+            head = l1;
+        } else {
+            head = l2;
+        }
+        LinkedNode tail = head;
+
+        //大小比较
+        while(l1 != null || l2 != null) {
+
+            if(l1.value < l2.value) {
+                tail.next = l1;
+                tail = l1;
+                l1 = l1.next;
+            } else {
+                tail.next = l2;
+                tail = l2;
+                l2 = l2.next;
+            }
+        }
+
+        //追加剩余的
+        if(l1 == null){
+            tail.next = l2;
+        }
+
+        if(l2 == null) {
+            tail.next = l1;
+        }
+
+        return head;
+    }
+
 }
