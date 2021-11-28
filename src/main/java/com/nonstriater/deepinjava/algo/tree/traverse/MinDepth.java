@@ -7,7 +7,7 @@ import java.util.Queue;
 
 /**
  * 二叉树最小高度(深度)，这是一个 BFS
- * 思路：BFS
+ * 思路：BFS ，层序遍历，借助队列 LinkedArray
  */
 public class MinDepth {
 
@@ -31,8 +31,8 @@ public class MinDepth {
                 /* 判断是否到达终点 */
                 if (cur.left == null && cur.right == null)
                     return depth;
-                /* 将 cur 的相邻节点加入队列 */
 
+                /* 将 cur 的相邻节点加入队列 */
                 if (cur.left != null)
                     q.offer(cur.left);
                 if (cur.right != null)

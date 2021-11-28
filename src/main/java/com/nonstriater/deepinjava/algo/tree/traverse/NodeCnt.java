@@ -7,6 +7,7 @@ import com.nonstriater.deepinjava.algo.tree.TreeNode;
  */
 public class NodeCnt {
 
+    //统计节点个数
     public int nodeCnt(TreeNode root){
         if (root == null) {
             return 0;
@@ -22,6 +23,8 @@ public class NodeCnt {
      * @return
      */
     public int fullTreeNodeCnt(TreeNode root){
+
+        //先算层高
         int h = 0;
         while (root.left != null) {
             root = root.left;

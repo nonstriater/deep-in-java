@@ -35,6 +35,7 @@ public class LevelOrder {
         System.out.println(levelOrder(n1));
     }
 
+    //层序遍历：直接输出
     public static void levelReverse(Node root){
 
         if (root == null) {
@@ -60,13 +61,14 @@ public class LevelOrder {
         }
     }
 
+    //层序遍历：节点输出到 ArrayList
     public static ArrayList<ArrayList<Integer>> levelOrder(Node node){
         if (node == null) {
             return null;
         }
 
         ArrayList<ArrayList<Integer>> result = new ArrayList();
-        Queue<Node> queue = new LinkedList();//LinkedList 就是一个Queue
+        Queue<Node> queue = new LinkedList();//LinkedList 就是一个Queue, 有 offer()/poll() api
         queue.add(node);
         while (queue.size() >0) {
             //当前层
