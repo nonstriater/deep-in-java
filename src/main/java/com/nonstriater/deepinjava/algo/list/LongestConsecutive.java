@@ -6,6 +6,7 @@ import java.util.Set;
 /**
  * 给定一个未排序的整数数组，找出最长连续序列的长度 ；
  * 输入: [100, 4, 200, 1, 3, 2] ， 输出: 4
+ * 思路： 滑动窗口
  */
 public class LongestConsecutive {
 
@@ -28,6 +29,7 @@ public class LongestConsecutive {
         int longestLen = 0;
         for (int i = 0 ;i < nums.length ; i++){
 
+            //窗口变大
             int x = nums[i];
 
             //set中查找
