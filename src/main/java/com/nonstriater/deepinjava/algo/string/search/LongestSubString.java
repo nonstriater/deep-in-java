@@ -15,6 +15,8 @@ public class LongestSubString {
         String s = "afbcbb";
         System.out.println(longestSubString(s.toCharArray()));
 
+        s = "afabdagh";
+        System.out.println(longestSubString(s.toCharArray()));
     }
 
     public static int longestSubString(char[] s){
@@ -31,7 +33,7 @@ public class LongestSubString {
             //window[c]++;
             window.put(c, window.getOrDefault(c, 0)+1); //java写的麻烦,不一定记得这个api
 
-            if (window.get(c) > 1) {
+            while (window.get(c) > 1) {
                 //判断左侧窗口是否要收缩
                 char d = s[left];
                 left ++;
