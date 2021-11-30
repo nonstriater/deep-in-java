@@ -8,7 +8,10 @@ import java.util.Arrays;
  * 再给一个总金额 amount，问你最少需要几枚硬币凑出这个金额
  * 如果不可能凑出，算法返回 -1
  *
- * 思路：
+ * 给定一个面值list ： 1，2，4，5，7，10； 给定一个 target ： 14， 求 凑齐 target=14 , 最少的零钱数量
+ * 思路：动态规划
+ *
+ *
  */
 public class CoinGroup {
 
@@ -50,11 +53,13 @@ public class CoinGroup {
     }
 
     //递归解法，处理重叠子问题, 使用 dp[amount+1] 备忘录
+    //1,2,4,5,7,10
     int coinChange2(int[] coins, int amount) {
         int[] dp = new int[amount + 1];
 
         // 数组大小为 amount + 1，初始值也为 amount + 1
-        // 为啥 dp 数组初始化为 amount + 1 呢，因为凑成 amount 金额的硬币数最多只可能等于 amount（全用 1 元面值的硬币），所以初始化为 amount + 1 就相当于初始化为正无穷
+        // 为啥 dp 数组初始化为 amount + 1 呢，因为凑成 amount 金额的硬币数最多只可能等于 amount（全用 1 元面值的硬币）
+        // 所以初始化为 amount + 1 就相当于初始化为正无穷
         Arrays.fill(dp, amount + 1);
 
         // base case

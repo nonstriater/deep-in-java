@@ -8,7 +8,7 @@ import java.util.Arrays;
  * B = [1,2,7]
  * 合并后
  * A = [1,2,4,5,6,7,8]
- * //尾部向头部扫描，将大的值放在尾部
+ * 思路： 尾部向头部扫描，将大的值放在尾部
  */
 public class MergeSequenceList {
 
