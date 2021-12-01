@@ -10,8 +10,6 @@ import java.util.Arrays;
  *
  * 给定一个面值list ： 1，2，4，5，7，10； 给定一个 target ： 14， 求 凑齐 target=14 , 最少的零钱数量
  * 思路：动态规划
- *
- *
  */
 public class CoinGroup {
 
@@ -38,7 +36,7 @@ public class CoinGroup {
         if (amount == 0) return 0;
         if (amount < 0) return -1;
 
-        int res = Integer.MAX_VALUE;
+        int res = Integer.MAX_VALUE;//最大值
         for (int coin : coins) {
             // 计算子问题的结果
             int subProblem = dp(coins, amount - coin);
