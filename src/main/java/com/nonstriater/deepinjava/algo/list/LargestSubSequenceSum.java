@@ -7,10 +7,9 @@ package com.nonstriater.deepinjava.algo.list;
  * 解释：连续子数组 [4,-1,2,1] 的和最大，为 6
  *
  * 为啥不能用滑动窗口：数组中的数字可以是负数； 不知道什么时机去收缩左侧窗口
- * 思路： maxSum保存当前累加的和，如果<0,就把 maxSum 清零 ， max保存最终的最大和;
- *
- * 动态规划思路：
- *
+ * 思路：
+ * maxSum保存当前累加的和，如果<0,就把 maxSum 清零 ， max保存最终的最大和;
+ * 动态规划
  */
 public class LargestSubSequenceSum {
 
