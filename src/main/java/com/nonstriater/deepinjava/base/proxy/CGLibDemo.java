@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.proxy;
+package com.nonstriater.deepinjava.base.proxy;
 
 /**
  * 基于CGLib 库实现的动态代理

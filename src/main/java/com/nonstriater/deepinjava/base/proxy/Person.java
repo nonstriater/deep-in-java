@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.proxy;
+package com.nonstriater.deepinjava.base.proxy;
 
 public interface Person {
 

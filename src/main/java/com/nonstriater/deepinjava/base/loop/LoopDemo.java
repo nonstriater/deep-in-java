@@ -4,6 +4,9 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Java 循环遍历语法
+ */
 public class LoopDemo {
 
     public static void main(String[] args){

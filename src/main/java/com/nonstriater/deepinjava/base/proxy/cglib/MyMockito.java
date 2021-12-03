@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.proxy.cglib;
+package com.nonstriater.deepinjava.base.proxy.cglib;
 
 /**
  * MyMockito

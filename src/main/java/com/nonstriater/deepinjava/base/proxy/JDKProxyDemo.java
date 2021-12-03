@@ -1,4 +1,4 @@
-package com.nonstriater.deepinjava.proxy;
+package com.nonstriater.deepinjava.base.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
