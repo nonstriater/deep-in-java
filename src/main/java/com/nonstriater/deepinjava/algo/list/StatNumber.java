@@ -63,7 +63,6 @@ public class StatNumber {
                 nums[index] = 0;
             }
         }
-
     }
 
 }
