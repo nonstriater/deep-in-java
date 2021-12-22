@@ -78,20 +78,46 @@ public class MergeSeqLink {
     }
 
     /**
-     * 优先级队列实现
+     * 优先级队列实现； 时间复杂度（KN * logK）， 空间复杂读 O(K)
      * 思路：
+     * 1 将 k 个链表的头结点加入最小堆
+     * 2 获取最小节点，接到结果链表中; 然后将最小节点的next 节点，加入堆   复杂度 （logK）
+     * 3 重复2 (复杂度 K*N)
      * @param lists
      * @return
      */
     public static LinkedNode mergeKLinks(LinkedNode[] lists){
-
         if (lists == null || lists.length == 0) {
             return null;
         }
 
-        PriorityQueue<LinkedNode> pq =  new PriorityQueue<>();
+        LinkedNode ret = new LinkedNode(-1);
+        LinkedNode p = ret; //p 指针不断前进
 
-        return null;
+        //PriorityQueue(int initialCapacity,Comparator<? super E> comparator)
+        PriorityQueue<LinkedNode> pq =  new PriorityQueue<>(
+                lists.length, (a, b) -> (a.value - b.value));
+
+        //将 k 个链表的头结点加入最小堆
+        for (LinkedNode head : lists) {
+            if (head != null){
+                pq.add(head);
+            }
+        }
+
+        while (!pq.isEmpty()) {
+            LinkedNode head =   pq.poll();
+            p.next = head;
+
+            if (head.next != null) {
+                pq.add(head.next);
+            }
+
+            p = p.next;
+
+        }
+
+        return  ret.next;
     }
 
 

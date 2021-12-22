@@ -35,9 +35,7 @@ public class PriorityQueueDemo {
         public String toString() {
             return "Employee [id=" + id + ", name=" + name + ", dob=" + dob + "]";
         }
-
     }
-
 
     public static void main(String[] args){
 
