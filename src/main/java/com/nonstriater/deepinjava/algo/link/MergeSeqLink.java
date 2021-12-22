@@ -1,5 +1,7 @@
 package com.nonstriater.deepinjava.algo.link;
 
+import java.util.PriorityQueue;
+
 /**
  * 合并2个有序链表
  *
@@ -52,6 +54,46 @@ public class MergeSeqLink {
 
 
     }
+
+    /**
+     * 合并K个有序链表
+     * 思路0：两两合并， 时间复杂度 k2 * n
+     * 思路1：分治的方式， 合并 前一半  + 后一半 ， 使用二分法； 时间复杂度 kn * logN
+     * 思路2：priority Queue(优先队列)
+     * 复杂度： k*logN
+     * @return
+     */
+    public static LinkedNode mergeKSeqLink(LinkedNode[] lists, int l, int r){
+
+        //
+        if (l == r) {
+            return lists[l];//?
+        }
+
+        int mid = (r-l)/2 + l;
+        LinkedNode l1 = mergeKSeqLink(lists, l, mid);
+        LinkedNode l2 = mergeKSeqLink(lists, mid, r);
+        return mergeSeqLink(l1,l2);
+
+    }
+
+    /**
+     * 优先级队列实现
+     * 思路：
+     * @param lists
+     * @return
+     */
+    public static LinkedNode mergeKLinks(LinkedNode[] lists){
+
+        if (lists == null || lists.length == 0) {
+            return null;
+        }
+
+        PriorityQueue<LinkedNode> pq =  new PriorityQueue<>();
+
+        return null;
+    }
+
 
     /**
      * 合并2个有序链表

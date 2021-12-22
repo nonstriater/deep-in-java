@@ -4,8 +4,8 @@ public class DaemonDemo {
 
     public static void main(String[] args) {
         Thread t = new Thread(DaemonDemo::print);
-        //t.setDaemon(false);
-        t.setDaemon(true);
+        t.setDaemon(false);//非守护线程
+        //t.setDaemon(true);//守护线程
         t.start();
         System.out.println("Exiting main  method");
     }

@@ -1,7 +1,10 @@
 package com.nonstriater.deepinjava.thread.safeCollection;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 public class MyConcurrentHash {
 
-    //ConcurrentHashMap
+    Map map = new ConcurrentHashMap();
 
 }

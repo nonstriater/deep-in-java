@@ -23,7 +23,6 @@ public class DisruptorDemo {
         public int get(){
             return value;
         }
-
         public void set(int value){
             this.value= value;
         }
@@ -34,7 +33,6 @@ public class DisruptorDemo {
     static Disruptor<Element> disruptor = null;
 
     static void initDisruptor(){
-
         // 生产者的线程工厂
         ThreadFactory threadFactory = new ThreadFactory(){
             @Override
@@ -51,7 +49,7 @@ public class DisruptorDemo {
             }
         };
 
-        // 处理Event的handler
+        // 处理Event的handler; 消费者
         EventHandler<Element> handler = new EventHandler<Element>(){
             @Override
             public void onEvent(Element element, long sequence, boolean endOfBatch)
@@ -82,10 +80,12 @@ public class DisruptorDemo {
 
         RingBuffer<Element> ringBuffer = disruptor.getRingBuffer();
 
+        //生产者 每10ms向disruptor中插入一个元素
         for (int i = 0; true; i++)
         {
             // 获取下一个可用位置的下标
             long sequence = ringBuffer.next();
+
             try {
                 // 返回可用位置的元素
                 Element event = ringBuffer.get(sequence);
@@ -97,9 +97,6 @@ public class DisruptorDemo {
 
             Thread.sleep(10);
         }
-
     }
-
-
 
 }
