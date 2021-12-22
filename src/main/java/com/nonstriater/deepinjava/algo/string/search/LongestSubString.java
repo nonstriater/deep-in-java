@@ -23,18 +23,18 @@ public class LongestSubString {
         int left = 0, right = 0;
         int res = 0; // 记录最长结果
 
+        //key 字符，value 是字符出现的次数
         Map<Character, Integer> window = new HashMap<Character, Integer>();
         //Set<Character> window = new HashSet<>();
         while (right < s.length) {
             Character c = s[right];
             //窗口变大
             right++;
-            //window.put(c, right++);
-            //window[c]++;
-            window.put(c, window.getOrDefault(c, 0)+1); //java写的麻烦,不一定记得这个api
 
-            while (window.get(c) > 1) {
-                //判断左侧窗口是否要收缩
+            //java写的麻烦,不一定记得这个api
+            window.put(c, window.getOrDefault(c, 0)+1);
+
+            while (window.get(c) > 1) { //判断左侧窗口是否要收缩
                 char d = s[left];
                 left ++;
                 window.put(d, window.get(d)-1);

@@ -18,6 +18,10 @@ public class TwoSum {
 
     /**
      * 寻找 2 个数之和
+     *
+     * 思路1：借助map 复杂度 O(N)
+     * 思路2：排序 + 双指针技巧  复杂度 O(NlogN)
+     *
      * @param nums
      * @param target
      *
@@ -28,7 +32,7 @@ public class TwoSum {
 
         int[] res =new int[2];
 
-        //空间换时间
+        //空间换时间, key是值，value是索引下标
         Map<Integer, Integer> map= new HashMap<>();
         for(int i = 0; i < nums.length; i++){
             map.put(nums[i], i);

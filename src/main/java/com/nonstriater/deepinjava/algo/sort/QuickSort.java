@@ -19,9 +19,16 @@ public class QuickSort {
         }
     }
 
+    /**
+     * 快排
+     * @param nums
+     * @param left
+     * @param right
+     */
     static void qsort(int[] nums, int left, int right){
 
         if (left < right) {
+            //先分成2半，左边 < 右边
             int i = partition(nums, left, right);
 
             qsort(nums, left, i-1);
@@ -30,23 +37,34 @@ public class QuickSort {
         }
     }
 
-    //4,1,2,9,3
+    /**
+     *  排序 [left, right] , 找到索引i， 使得 i左边 < i右边
+     *  思路：选 尾部节点 作为 pivot， 移动元素，使得 左边的元素 小于  pivot， 右边的大于  pivot
+     *
+     * 如： 4,1,2,9,3 ，  pivot是 3
+     * 移动过程：
+     * 9,1,2,4,3
+     * 9,1,2,4,3
+     * 2,1,9,4,3
+     * 2,1,3,4,9
+     */
+
     static int partition(int[] nums, int left, int right){
 
-        int pivot = nums[right];//尾部节点
+        int pivot = nums[right];//选 尾部节点 作为 pivot
         int end = right;
 
         right--;
         while (left < right) {
 
-            if (nums[left] <= pivot) {
+            if (nums[left] <= pivot) {//左指针右移
                 left ++ ;
                 continue;
             }
 
             //swap left & right
             swap(nums, left, right);
-            right--;
+            right--; //右指针左移
 
         }
 

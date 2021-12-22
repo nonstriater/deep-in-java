@@ -20,6 +20,7 @@ public class MergeSort {
 
     public static void mergeSort(int[] list, int low, int high){
 
+        //先分成2半，左边， 右边 排好序，再 merge
         int mid = (low + high) / 2;
         mergeSort(list, low, mid);
         mergeSort(list, mid+1, high);
