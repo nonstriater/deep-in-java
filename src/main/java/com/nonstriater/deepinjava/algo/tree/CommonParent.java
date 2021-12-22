@@ -7,6 +7,13 @@ package com.nonstriater.deepinjava.algo.tree;
 public class CommonParent {
 
 
+    /**
+     *
+     * @param root  root节点
+     * @param p  节点
+     * @param q  节点
+     * @return
+     */
     TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         // base case
         if (root == null) return null;
@@ -14,11 +21,12 @@ public class CommonParent {
 
         TreeNode left = lowestCommonAncestor(root.left, p, q);
         TreeNode right = lowestCommonAncestor(root.right, p, q);
+
         // 情况 1  ：p, q 在 root 为根的树中
         if (left != null && right != null) {
             return root;
         }
-        // 情况 2 ：p, q 不在 在 root 为根的树中
+        // 情况 2 ：p, q 不在  root 为根的树中
         if (left == null && right == null) {
             return null;
         }

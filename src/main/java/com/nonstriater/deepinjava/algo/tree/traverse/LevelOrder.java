@@ -42,7 +42,7 @@ public class LevelOrder {
             return;
         }
 
-        LinkedList<Node> list = new LinkedList<Node>();
+        LinkedList<Node> list = new LinkedList<Node>();//队列用LinkedList
         list.add(root);
         while (list.size() > 0) {
 
@@ -50,11 +50,12 @@ public class LevelOrder {
             Node node = list.poll();
             System.out.printf("%d",node.value);
 
-            //加子节点
+            //加左边子节点
             if (node.left != null) {
                 list.add(node.left);
             }
 
+            //加右边子节点
             if (node.right != null) {
                 list.add(node.right);
             }

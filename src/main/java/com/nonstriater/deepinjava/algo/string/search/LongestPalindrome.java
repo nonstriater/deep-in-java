@@ -54,7 +54,7 @@ public class LongestPalindrome {
         return s.substring(start, end + 1);
     }
 
-    // 返回以 s[l] 和 s[r] 为中心的最长回文串
+    // 返回以 s[left] 和 s[right] 为中心点的最长回文串
     public static  int expandAroundCenter(String s, int left, int right) {
         int L = left, R = right;
         while (L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {

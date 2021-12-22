@@ -14,7 +14,7 @@ package com.nonstriater.deepinjava.algo.list;
  int[] arr = {2, 5, 5, 2, 3};
  /*
  1、遍历数组，第一个arr[0]=2，然后看下标为2的元素是arr[2]=5。
- 2、把arr[2]对应的5赋值给arr[0]，然后arr[2]就设置为-1
+ 2、把arr[2]对应的5赋值给arr[0]，然后arr[2]就设置为-1（代表2出现一次）
  3、然后重复整个过程直到结束
  它的整个变化过程就是这样
  - {2, 5, 5, 2, 3}
@@ -48,7 +48,6 @@ public class StatNumber {
     public static void statNumber(int[] nums){
         int index = 0;
         while (index < nums.length) {
-
             int temp =  nums[index] -1;
             if (temp < 0) {
                 index ++ ;
@@ -58,7 +57,7 @@ public class StatNumber {
             if (nums[temp] > 0) {//
                 nums[index] = nums[temp];
                 nums[temp] = -1;
-            } else {
+            } else {// <=0 情况，
                 nums[temp] -= 1; //num[temp]--
                 nums[index] = 0;
             }
