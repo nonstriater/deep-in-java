@@ -27,7 +27,7 @@ public class LargestSubSequenceSum {
     public static int largestSubSequenceSum(int[] list){
 
         int maxSum = 0;// max保存最终的最大和
-        int temp = 0;
+        int temp = 0;//保存中间过程的和
 
         if (list == null || list.length == 0 ) {
             return 0;
@@ -56,8 +56,6 @@ public class LargestSubSequenceSum {
      * dp[n-1] 就是 nums 的「最大子数组和」
      *
      * // 要么自成一派，要么和前面的子数组合并； 状态转移
-     *
-     *
      * 状态压缩：注意到 dp[i] 仅仅和 dp[i-1] 的状态有关
      *
      * @param nums
