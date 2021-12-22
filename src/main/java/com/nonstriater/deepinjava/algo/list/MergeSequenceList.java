@@ -43,7 +43,7 @@ public class MergeSequenceList {
             //2个指针都有值时
             if (a[index_a] >= 0 && b[index_b] >= 0) {
                 if (a[index_a] > b[index_b]) {
-                    a[len_a--] = a[index_a--];
+                    a[len_a--] = a[index_a--];//将大的值放在尾部
                 }else{
                     a[len_a--] = b[index_b--];
                 }

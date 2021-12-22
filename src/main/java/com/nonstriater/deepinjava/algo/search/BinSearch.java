@@ -25,7 +25,8 @@ public class BinSearch {
         int low = 0;
         int high = length -1;
         while (low < high) {
-            mid = (low + high) / 2;
+            //mid = (low + high) / 2;
+            mid = low + (high - low) / 2;
             if (A[mid] > target) {
                 high = mid-1;
             } else if (A[mid] == target) {

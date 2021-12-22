@@ -29,6 +29,13 @@ public class MergeSort {
 
     }
 
+    /**
+     * 合并2个有序数组
+     * @param list
+     * @param low
+     * @param middle
+     * @param high
+     */
     private static void merge(int[] list, int low, int middle , int high) {
 
     }
