@@ -93,6 +93,13 @@ public class Array {
             System.out.println(newIds);
         }
 
+        {
+            System.out.println("filter test");
+            List<String> ids = Arrays.asList("1","2","3");
+            ids.stream().filter(x -> !x.equals("2"));
+            System.out.println(ids);
+        }
+
     }
 
 
