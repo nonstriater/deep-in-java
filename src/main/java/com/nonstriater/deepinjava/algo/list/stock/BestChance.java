@@ -22,6 +22,52 @@ public class BestChance {
         System.out.println(maxProfitK1(list));
     }
 
+    /**
+     * 暴力解法
+     * @param prices
+     * @return
+     */
+    public static int maxProfitK1AC(int[] prices) {
+        if (prices.length < 2) {
+            return 0;
+        }
+
+        int ret = 0;
+        for (int i = 0; i < prices.length; i++) {
+            for (int j = i+1; j < prices.length; j++) {
+                ret = (ret > (prices[j] - prices[i])) ? ret : (prices[j] - prices[i]);
+                //ret = Math.max(ret, prices[j] - prices[i]);
+            }
+        }
+
+        return ret;
+    }
+
+    /**
+     * 难度 easy
+     * 动态规划，一次遍历
+     * 思路： 我们只需要遍历价格数组一遍，记录历史最低点，然后在每一天考虑这么一个问题：
+     * 如果我是在历史最低点买进的，那么我今天卖出能赚多少钱？当考虑完所有天数之时，我们就得到了最好的答案。
+     * 示例： [3,2,6,5,1,3]
+     * 视频讲解： https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/solution/121-mai-mai-gu-piao-de-zui-jia-shi-ji-by-leetcode-/
+     * @param prices
+     * @return
+     */
+    public static int maxProfitK1_2(int[] prices) {
+
+        int minprice = Integer.MAX_VALUE; //记录一个历史最低价格; 第 i 天卖出股票能得到的利润就是prices[i] - minprice
+        int maxprofit = 0; //最大利润
+
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i] < minprice) {
+                minprice = prices[i];//记录历史最低价格
+            } else if (prices[i] - minprice > maxprofit) {
+                maxprofit = prices[i] - minprice;
+            }
+        }
+        return maxprofit;
+    }
+
 
     public static int maxProfitK1(int[] prices) {
 

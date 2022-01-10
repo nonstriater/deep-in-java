@@ -19,6 +19,7 @@ public class LongestSubString {
         System.out.println(longestSubString(s.toCharArray()));
     }
 
+    //abcabbcbb
     public static int longestSubString(char[] s){
         int left = 0, right = 0;
         int res = 0; // 记录最长结果
@@ -46,6 +47,7 @@ public class LongestSubString {
         }
         return res;
     }
+
 
     //java字符串处理时，字典定义 map<char, int> 不太方便
     //map<Character, int>
